@@ -52,3 +52,25 @@ body {
 .navbar a:hover::before {
     width: 100%;
 }
+
+.main {
+    text-align: center;
+    color:#fff;
+    margin-top: 125px;
+    
+}
+
+.discordrpc {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutme {
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: auto;
+}
