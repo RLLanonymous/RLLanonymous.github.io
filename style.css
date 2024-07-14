@@ -1,119 +1,47 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background-color: #1e2127;
+    background: url("./img/173.png")
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: #3f42471c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 180px;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: #141414; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #000000;
+    text-align: center;
 }
 
-.logo {
+.card h1 {
+    color: rgb(255, 255, 255);
+}
+
+.social-buttons {
+    margin-top: 30px;
+}
+
+.social-buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
     font-size: 32px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.navbar a {
-    position: relative;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-}
-
-.navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #ffffff00;
-}
-
-.navbar a:hover::before {
-    width: 100%;
-}
-
-.main {
-    text-align: center;
-    color:#fff;
-    margin-top: 125px;
-    
-}
-
-.discordrpc {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.GreyWhiteButtonT {
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 1dvh;
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
-    font-weight: 600;
-    line-height: normal;
-    min-height: 60px;
-    min-width: 0;
-    outline: none;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 40%;
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
-  }
-  
-  .GreyWhiteButtonT:hover {
-    color: #fff;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
     background-color: #303030;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-  
-  .GreyWhiteButtonT:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
+    transition: background-color 0.3s;
+    position: relative; /* Position relative pour les tooltips */
+}
 
-  .NoTextDecoration {
-    text-decoration: none;
-  }
-
-  .center {
-    text-align: center;
-    margin-top: 40px;
-  }
+.social-buttons a:hover {
+    background-color: #707070;
+}
