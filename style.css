@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url("./img/173.png")
+    background-color: #252525;
 }
 
 .card {
@@ -43,5 +43,24 @@ body {
 }
 
 .social-buttons a:hover {
+    background-color: #707070;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #303030;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
     background-color: #707070;
 }
